@@ -16,6 +16,7 @@
       <nav class="service-nav">
         <input class="service-nav-search" type="text" placeholder="Поиск по сайту">
         <ul class="service-nav-buttons">
+          <li class="service-nav-user"><a href="#">Валентин Петухов</a></li>
           <li class="service-nav-logout"><a href="#">Выйти</a></li>
           <li class="service-nav-compare"><a href="#">Сравнить</a></li>
           <li class="service-nav-cart"><a href="#">Корзина</a></li>
@@ -70,8 +71,95 @@
           </ul>
         </div>
 
+        <aside class="filter-sidebar">
+          <div class="filter">
+            <h3>Фильтр:</h3>
+          </div>
+        </aside>
 
+        <div class="catalog-sort">
+          <h3>сортировка:</h3>
 
+          <input id="price-sort" type="checkbox" name="price-sort" value="price-sort" checked>
+          <input id="type-sort" type="checkbox" name="type-sort" value="type-sort">
+          <input id="popular-sort" type="checkbox" name="popular-sort" value="popular-sort">
+
+          <div class="catalog-checkbox-labels">
+            <label for="price-sort">По цене</label>
+            <label for="type-sort">По типу</label>
+            <label for="popular-sort">По популярности</label>
+          </div>
+
+          <ul class="catalog-sort-buttons">
+            <li><button class="sort-up">по возрастанию</button></li>
+            <li><button class="sort-down">по убыванию</button></li>
+          </ul>
+        </div>
+
+        <div class="catalog-products">
+          <ul class="products-list">
+            <li class="product">
+              <img src="img/catalogpage/monopod1.png" alt="Любительская селфи-палка">
+              <a href="#">Любительская селфи-палка</a>
+              <p class="product-price">500 руб</p>
+              <div class="usage-links">
+                <a href="#" class="add-to-cart">Добавить в корзину</a>
+                <a href="#" class="add-to-compare">Добавить к сравнению</a>
+              </div>
+            </li>
+            <li class="product">
+              <img src="img/catalogpage/monopod2.png" alt="Профессиональная селфи-палка">
+              <a href="#">Профессиональная селфи-палка</a>
+              <p class="product-price">1500 руб</p>
+              <div class="usage-links">
+                <a href="#" class="add-to-cart">Добавить в корзину</a>
+                <a href="#" class="add-to-compare">Добавить к сравнению</a>
+              </div>
+            </li>
+            <li class="product">
+              <img src="img/catalogpage/monopod3.png" alt="Непотопляемая селфи-палка">
+              <a href="#">Непотопляемая селфи-палка</a>
+              <p class="product-price">2500 руб</p>
+              <div class="usage-links">
+                <a href="#" class="add-to-cart">Добавить в корзину</a>
+                <a href="#" class="add-to-compare">Добавить к сравнению</a>
+              </div>
+            </li>
+            <li class="product">
+              <img src="img/catalogpage/monopod4.png" alt="Селфи-палка Следуй за мной">
+              <a href="#">Селфи-палка "Следуй за мной"</a>
+              <p class="product-price">4900 руб</p>
+              <div class="usage-links">
+                <a href="#" class="add-to-cart">Добавить в корзину</a>
+                <a href="#" class="add-to-compare">Добавить к сравнению</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pages-nav">
+          <ul class="pages-nav-list">
+            <li class="pages-nav-item">
+              <a href="#" class="ctrl-prev-btn">Назад</a>
+            </li>
+            <li class="pages-nav-item">
+              <ul class="page-numbers-list">
+                <li>
+                  <a href="#" class="page-number active">1</a>
+                </li>
+                <li>
+                  <a href="#" class="page-number">2</a>
+                </li>
+                <li>
+                  <a href="#" class="page-number">3</a>
+                </li>
+              </ul>
+            </li>
+            <li class="pages-nav-item">
+              <a href="#" class="ctrl-next-btn">Вперед</a>
+            </li>
+          </ul>
+        </div>
       </article>
     </main>
 
@@ -85,7 +173,8 @@
       </a>
 
       <ul class="service-nav-buttons footer">
-        <li class="service-nav-login footer-item"><a href="#">Войти</a></li>
+        <li class="service-nav-user footer-item"><a href="#">Валентин Петухов</a></li>
+        <li class="service-nav-logout footer-item"><a href="#">Выход</a></li>
         <li class="service-nav-compare footer-item"><a href="#">Сравнить</a></li>
         <li class="service-nav-cart footer-item"><a href="#">Корзина</a></li>
       </ul>
