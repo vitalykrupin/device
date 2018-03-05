@@ -10,11 +10,12 @@
 
     <header class="main-header">
       <a class="header-logo" href="">
-        <h1 class="header-logo-title">DEVICE</h1>
+        <img class="header-logo-img" src="img/headerlogo.png">DEVICE</img>
       </a>
 
       <form class="header-search">
-        <input class="header-search-field" type="text" placeholder="Поиск по сайту">
+        <p><input class="header-search-field" type="search" placeholder="Поиск по сайту">
+        <input type="submit" class="header-search-submit"></p>
       </form>
       
       <ul class="header-user">
@@ -56,117 +57,110 @@
 
 <!--                                  Main starts                               -->
     <main class="catalog-content">
-      <article class="catalog-monopods">
-        <h2 class="visually-hidden">Каталог: моноподы</h2>
 
-        <div class="catalog-item-title">
-          <h2>Моноподы для селфи</h2>
-        </div>
+      <div class="catalog-item-title">
+        <h2>Моноподы для селфи</h2>
+      </div>
 
-        <div class="catalog-path">
-          <ul class="catalog-path-list">
-            <li class="catalog-path-item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="catalog-path-item">
-              <a href="#">Каталог товаров</a>
-            </li>
-            <li class="catalog-path-item  catalog-path-item-active">
-              <a>Моноподы для селфи</a>
-            </li>
-          </ul>
-        </div>
+      <div class="catalog-path">
+        <ul class="catalog-path-list">
+          <li class="catalog-path-item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="catalog-path-item">
+            <a href="">Каталог товаров</a>
+          </li>
+          <li class="catalog-path-item  catalog-path-item-active">
+            <a>Моноподы для селфи</a>
+          </li>
+        </ul>
+      </div>
 
-        <article class="filter-sidebar">
-          <div class="filter">
-            <h3>Фильтр:</h3>
-          </div>
-        </article>
-
-        <div class="catalog-sort">
-          <h3>сортировка:</h3>
-
-          <input id="price-sort" type="checkbox" name="price-sort" value="price-sort" checked>
-          <input id="type-sort" type="checkbox" name="type-sort" value="type-sort">
-          <input id="popular-sort" type="checkbox" name="popular-sort" value="popular-sort">
-
-          <div class="catalog-checkbox-labels">
-            <label for="price-sort">По цене</label>
-            <label for="type-sort">По типу</label>
-            <label for="popular-sort">По популярности</label>
-          </div>
-
-          <ul class="catalog-sort-buttons">
-            <li><button class="sort-up">по возрастанию</button></li>
-            <li><button class="sort-down">по убыванию</button></li>
-          </ul>
-        </div>
-
-        <div class="catalog-products">
-          <ul class="products-list">
-            <li class="product">
-              <img src="img/catalogpage/monopod1.png" alt="Любительская селфи-палка">
-              <a href="#">Любительская селфи-палка</a>
-              <p class="product-price">500 руб</p>
-              <div class="usage-links">
-                <a href="#" class="add-to-cart">Добавить в корзину</a>
-                <a href="#" class="add-to-compare">Добавить к сравнению</a>
-              </div>
-            </li>
-            <li class="product">
-              <img src="img/catalogpage/monopod2.png" alt="Профессиональная селфи-палка">
-              <a href="#">Профессиональная селфи-палка</a>
-              <p class="product-price">1500 руб</p>
-              <div class="usage-links">
-                <a href="#" class="add-to-cart">Добавить в корзину</a>
-                <a href="#" class="add-to-compare">Добавить к сравнению</a>
-              </div>
-            </li>
-            <li class="product">
-              <img src="img/catalogpage/monopod3.png" alt="Непотопляемая селфи-палка">
-              <a href="#">Непотопляемая селфи-палка</a>
-              <p class="product-price">2500 руб</p>
-              <div class="usage-links">
-                <a href="#" class="add-to-cart">Добавить в корзину</a>
-                <a href="#" class="add-to-compare">Добавить к сравнению</a>
-              </div>
-            </li>
-            <li class="product">
-              <img src="img/catalogpage/monopod4.png" alt="Селфи-палка Следуй за мной">
-              <a href="#">Селфи-палка "Следуй за мной"</a>
-              <p class="product-price">4900 руб</p>
-              <div class="usage-links">
-                <a href="#" class="add-to-cart">Добавить в корзину</a>
-                <a href="#" class="add-to-compare">Добавить к сравнению</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="pages-nav">
-          <ul class="pages-nav-list">
-            <li class="pages-nav-item">
-              <a href="#" class="ctrl-prev-btn">Назад</a>
-            </li>
-            <li class="pages-nav-item">
-              <ul class="page-numbers-list">
-                <li>
-                  <a href="#" class="page-number active">1</a>
-                </li>
-                <li>
-                  <a href="#" class="page-number">2</a>
-                </li>
-                <li>
-                  <a href="#" class="page-number">3</a>
-                </li>
-              </ul>
-            </li>
-            <li class="pages-nav-item">
-              <a href="#" class="ctrl-next-btn">Вперед</a>
-            </li>
-          </ul>
+      <article class="filter-sidebar">
+        <div class="filter">
+          <h3>Фильтр:</h3>
         </div>
       </article>
+
+      <div class="catalog-sort">
+        <h3>сортировка:</h3>
+
+        <div class="catalog-sort-types">
+          <a href="" class="price-sort">По цене</a>
+          <a href="" class="type-sort">По типу</a>
+          <a href="" class="popular-sort">По популярности</a>
+        </div>
+
+        <div class="catalog-sort-buttons">
+          <a href="" class="sort-up">по возрастанию</a>
+          <a href="" class="sort-down">по убыванию</a>
+        </div>
+      </div>
+
+      <div class="catalog-products">
+        <ul class="products-list">
+          <li class="product">
+            <img src="img/catalogpage/monopod1.png" alt="Любительская селфи-палка">
+            <a href="">Любительская селфи-палка</a>
+            <p class="product-price">500 руб</p>
+            <div class="usage-links">
+              <a href="" class="add-to-cart">Добавить в корзину</a>
+              <a href="" class="add-to-compare">Добавить к сравнению</a>
+            </div>
+          </li>
+          <li class="product">
+            <img src="img/catalogpage/monopod2.png" alt="Профессиональная селфи-палка">
+            <a href="">Профессиональная селфи-палка</a>
+            <p class="product-price">1500 руб</p>
+            <div class="usage-links">
+              <a href="" class="add-to-cart">Добавить в корзину</a>
+              <a href="" class="add-to-compare">Добавить к сравнению</a>
+            </div>
+          </li>
+          <li class="product">
+            <img src="img/catalogpage/monopod3.png" alt="Непотопляемая селфи-палка">
+            <a href="">Непотопляемая селфи-палка</a>
+            <p class="product-price">2500 руб</p>
+            <div class="usage-links">
+              <a href="" class="add-to-cart">Добавить в корзину</a>
+              <a href="" class="add-to-compare">Добавить к сравнению</a>
+            </div>
+          </li>
+          <li class="product">
+            <img src="img/catalogpage/monopod4.png" alt="Селфи-палка Следуй за мной">
+            <a href="">Селфи-палка "Следуй за мной"</a>
+            <p class="product-price">4900 руб</p>
+            <div class="usage-links">
+              <a href="" class="add-to-cart">Добавить в корзину</a>
+              <a href="" class="add-to-compare">Добавить к сравнению</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pages-nav">
+        <ul class="pages-nav-list">
+          <li class="pages-nav-item">
+            <a href="" class="ctrl-prev-btn">Назад</a>
+          </li>
+          <li class="pages-nav-item">
+            <ul class="page-numbers-list">
+              <li>
+                <a href="" class="page-number active">1</a>
+              </li>
+              <li>
+                <a href="" class="page-number">2</a>
+              </li>
+              <li>
+                <a href="" class="page-number">3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="pages-nav-item">
+            <a href="" class="ctrl-next-btn">Вперед</a>
+          </li>
+        </ul>
+      </div>      
     </main>
 
 <!--                                   Main ends                               -->
@@ -175,7 +169,7 @@
 
     <footer class="main-footer">
       <a class="footer-logo" href="">
-        <h1 class="footer-logo-title">DEVICE</h1>
+        <img class="footer-logo-img" src="img/footerlogo.png">DEVICE</img>
       </a>
 
       <ul class="footer-user">
