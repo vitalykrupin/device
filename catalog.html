@@ -13,8 +13,9 @@
       </a>
 
       <form class="header-search">
-        <p><input class="header-search-field" type="search" placeholder="Поиск по сайту">
-        <input type="submit" class="header-search-submit"></p>
+        <label class="visually-hidden" for="header-search-field">Поле поиска</label>
+        <input class="header-search-field" type="search" id="header-search-field" name="search-input" placeholder="Поиск по сайту">
+        <button type="submit" class="header-search-submit"></button>
       </form>
       
       <ul class="header-user">
@@ -56,6 +57,7 @@
 
 <!--                                  Main starts                               -->
     <main class="catalog-content">
+    <h1 class="visually-hidden">Страница каталога</h1>
 
       <div class="catalog-item-title">
         <h2>Моноподы для селфи</h2>
@@ -143,8 +145,8 @@
         </div>
 
         <div class="catalog-sort-buttons">
-          <a href="#" class="sort-up">по возрастанию</a>
-          <a class="sort-down">по убыванию</a>
+          <button class="sort-up" type="button">по возрастанию</button>
+          <button class="sort-down" type="button">по убыванию</button>
         </div>
       </div>
 
@@ -190,6 +192,7 @@
       </div>
 
       <div class="pages-nav">
+        <h3 class="visually-hidden">Навигация по страницам</h3>
         <ul class="pages-nav-list">
           <li class="pages-nav-item">
             <a href="#" class="ctrl-prev-btn">Назад</a>
@@ -257,7 +260,7 @@
       </div>
 
       <a class="footer-logo-academy" href="https://htmlacademy.ru/">
-        <img class="footer-logo-title" src="img/icons/academy.svg" width="27" height="35" alt="Логотип HTML Academy">
+        <img class="footer-logo-title" src="img/icons/academy.svg" width="27" height="35" alt="Логотип HTMLAcademy">
       </a>
     </footer>
 
