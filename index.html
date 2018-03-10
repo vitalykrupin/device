@@ -16,8 +16,9 @@
       </a>
 
       <form class="header-search">
-        <p><input class="header-search-field" type="search" placeholder="Поиск по сайту">
-        <input type="submit" class="header-search-submit"></p>
+        <label class="visually-hidden" for="header-search-field">Поле поиска</label>
+        <input class="header-search-field" type="search" id="header-search-field" name="search-input" placeholder="Поиск по сайту">
+        <button type="submit" class="header-search-submit"></button>
       </form>
       
       <ul class="header-user">
@@ -245,6 +246,20 @@
         </div>
         <a class="contacts-btn" href="#">Напишите нам</a>
       </article>
+
+      <section class="write-us">
+        <h3 class="visually-hidden">Форма обратной связи</h3>
+        <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="write-us-label" for="write-us-name">Ваше имя:</label>
+          <input class="write-as-input" type="text" name="name" id="write-us-name" placeholder="Имя Фамилия">
+          <label class="write-us-label" for="write-us-email">Ваш e-mail:</label>
+          <input class="write-as-input" type="email" name="email" id="write-us-email" placeholder="email@example.com">
+          <label class="write-us-label" for="write-us-text">Текст письма:</label>
+          <textarea class="write-as-textarea" name="text" id="write-us-text" placeholder="В свободной форме"></textarea>
+          <button class="button" type="submit">Отправить</button>
+          <button class="form-close" type="button">Закрыть</button>
+        </form>
+      </section>
 
 <!-- Section Contacts ends -->
 
