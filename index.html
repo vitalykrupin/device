@@ -18,7 +18,7 @@
       <form class="header-search">
         <label class="visually-hidden" for="header-search-field">Поле поиска</label>
         <input class="header-search-field" type="search" id="header-search-field" name="search-input" placeholder="Поиск по сайту">
-        <button type="submit" class="header-search-submit"></button>
+        <button type="submit" class="header-search-submit">Найти</button>
       </form>
       
       <ul class="header-user">
@@ -65,9 +65,9 @@
         <h2 class="visually-hidden">Слайдер популярных товаров</h2>
 
         <ul class="slider-btns">
-            <li class="slider-btns-item"><button class="slider-btn-1" type="button">Слайд 1</button></li>
-            <li class="slider-btns-item"><button class="slider-btn-2" type="button">Слайд 2</button></li>
-            <li class="slider-btns-item"><button class="slider-btn-3" type="button">Слайд 3</button></li>
+            <li class="slider-btns-item"><input class="slider-btn-1" type="radio">Слайд 1></li>
+            <li class="slider-btns-item"><input class="slider-btn-2" type="radio">Слайд 2></li>
+            <li class="slider-btns-item"><input class="slider-btn-3" type="radio">Слайд 3></li>
           </ul>
 
         <div class="slider-slides">
@@ -172,14 +172,10 @@
         
         <h2 class="visually-hidden">Услуги. Гарантии. Кредит.</h2>
 
-        <input id="btn-delivery" class="delivery-btn" type="button" checked>
-        <input id="btn-warranty" class="warranty-btn" type="button">
-        <input id="btn-credit" class="credit-btn" type="button">
-
-        <div class="services__slider-controls">
-          <label for="btn-delivery">Доставка</label>
-          <label for="btn-warranty">Гарантия</label>
-          <label for="btn-credit">Кредит</label>
+        <div class="services-controls">
+          <button class="delivery-btn" type="button">доставка</button>
+          <button class="warranty-btn" type="button">гарантия</button>
+          <button class="credit-btn" type="button">кредит</button>
         </div>
 
         <div class="services-slides">
