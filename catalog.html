@@ -83,12 +83,15 @@
 
           <fieldset class="filter-group">
             <legend>Стоимость</legend>
-            <input class="filter-input-range" type="range" name="min" id="filter-min-price" min="0" max="5000" step="1">
-            <label class="visually-hidden" for="filter-min-price">Минимальная цена</label>
-            <input class="filter-input-range" type="range" name="max" id="filter-max-price" min="0" max="5000" step="1">
-            <label class="visually-hidden" for="filter-max-price">Максимальная цена</label>
-            <p class="min-price-value">От 0</p>
-            <p class="max-price-value">До 5000</p>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale"><div style="margin-left: 50px; width: 100px;" class="bar"></div></div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
+                <p class="min-price">От 0</p>
+                <p class="max-price">До 5000</p>
+              </div>
+            </div>
           </fieldset>
 
           <fieldset class="filter-group">
