@@ -1,0 +1,40 @@
+@font-face { 
+  font-family: 'Gilroy extrabold';       
+  src: url('../fonts/gilroyextrabold.woff2');
+  font-style: uppercase;
+}
+
+@font-face { 
+  font-family: 'Gilroy light';       
+  src: url('../fonts/gilroylight.woff2');
+  font-style: uppercase;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: Open Sans, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 1);
+
+  background-color: rgba(255, 255, 255, 1);
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+.header-logo-text {
+  font-family: "Gilroy extrabold", Arial, sans-serif;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 700;
+}
+
