@@ -84,6 +84,12 @@ h2 {
   line-height: 48px;
 }
 
+.header-search input {
+  color: rgba(0, 0, 0, 0.3);
+  border: none;
+  background-color: rgb(247, 226, 150);
+}
+
 .header-catalog_open-item {
   line-height: 36px; 
 }
