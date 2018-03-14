@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic-ext" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -21,7 +20,7 @@
       <form class="header-search">
         <label class="visually-hidden" for="header-search-field">Поле поиска</label>
         <input class="header-search-field" type="search" id="header-search-field" name="search-input" placeholder="Поиск по сайту">
-        <button type="submit" class="header-search-submit">Найти</button>
+        <button type="submit" class="button header-search-submit">Найти</button>
       </form>
       
       <ul class="header-user">
@@ -82,12 +81,12 @@
             <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <a href="#" class="slide-more-info">Подробнее</a>
             <table class="slide-info slide-info-monopod">
-              <tr>
+              <tr class="table-value">
                 <td>8,5 м</td>
                 <td>5 кг</td>
                 <td>Карбон</td>
               </tr>
-              <tr>
+              <tr class="table-name">
                 <td>Длина палки</td>
                 <td>Вес палки</td>
                 <td>Материал</td>
@@ -139,30 +138,30 @@
 
         <h2 class="visually-hidden">Категории товаров</h2>
 
-        <ul class="categories-items">
+        <ul class="categories-list">
           <li class="categories-item">
-            <img class="categories-item_img" src="img/categories-vr_glasses.png" width="97" height="55" alt="Виртуальная реальность">
-            <a class="categories-item_title" href="#">Виртуальная реальность</a>
+            <img class="categories-item-img" src="img/categories-vr_glasses.png" width="97" height="55" alt="Виртуальная реальность">
+            <a class="categories-item-title" href="#">Виртуальная реальность</a>
           </li>
           <li class="categories-item">
-            <img class="categories-item_img" src="img/categories-monopod.png" width="86" height="117" alt="Моноподы для селфи">
-            <a class="categories-item_title" href="#">Моноподы для селфи</a>
+            <img class="categories-item-img" src="img/categories-monopod.png" width="86" height="117" alt="Моноподы для селфи">
+            <a class="categories-item-title" href="#">Моноподы для селфи</a>
           </li>
           <li class="categories-item">
-            <img class="categories-item_img" src="img/categories-camera.png" width="71" height="87" alt="Экшн-камеры">
-            <a class="categories-item_title" href="#">Экшн-камеры</a>
+            <img class="categories-item-img" src="img/categories-camera.png" width="71" height="87" alt="Экшн-камеры">
+            <a class="categories-item-title" href="#">Экшн-камеры</a>
           </li>
           <li class="categories-item">
-            <img class="categories-item_img" src="img/categories-fitness_tracker.png" width="107" height="65" alt="Фитнес-браслеты">
-            <a class="categories-item_title" href="#">Фитнес-браслеты</a>
+            <img class="categories-item-img" src="img/categories-fitness_tracker.png" width="107" height="65" alt="Фитнес-браслеты">
+            <a class="categories-item-title" href="#">Фитнес-браслеты</a>
           </li>
           <li class="categories-item">
-          <img class="categories-item_img" src="img/categories-smart_watch.png" width="56" height="98" alt="Умные часы">
-          <a class="categories-item_title" href="#">Умные часы</a>
+          <img class="categories-item-img" src="img/categories-smart_watch.png" width="56" height="98" alt="Умные часы">
+          <a class="categories-item-title" href="#">Умные часы</a>
           </li>
           <li class="categories-item">
-            <img class="categories-item_img" src="img/categories-dron.png" width="132" height="69" alt="Квадрокоптеры">
-            <a class="categories-item_title" href="#">Квадрокоптеры</a>
+            <img class="categories-item-img" src="img/categories-dron.png" width="132" height="69" alt="Квадрокоптеры">
+            <a class="categories-item-title" href="#">Квадрокоптеры</a>
           </li>
         </ul>
       </section>
@@ -265,7 +264,7 @@
           <input class="write-as-input" type="email" name="email" id="write-us-email" placeholder="email@example.com">
           <label class="write-us-label" for="write-us-text">Текст письма:</label>
           <textarea class="write-as-textarea" name="text" id="write-us-text" placeholder="В свободной форме"></textarea>
-          <button class="button" type="submit">Отправить</button>
+          <button class="btn-submitform" type="submit">Отправить</button>
           <button class="form-close" type="button">Закрыть</button>
         </form>
       </section>
@@ -292,7 +291,7 @@
         </ul>
       </div>
 
-      <p class="footer-adress">г. Москва, ул. Строителей, 15</p>
+      <p class="footer-address">г. Москва, ул. Строителей, 15</p>
 
       <ul class="footer-service-nav">
         <li class="service-nav-delivery"><a href="#">доставка</a></li>
@@ -314,7 +313,7 @@
       </div>
 
       <a class="footer-logo-academy" href="https://htmlacademy.ru/">
-        <img class="footer-logo-title" src="img/icons/academy.svg" width="27" height="35" alt="Логотип HTMLAcademy">
+        <img class="logo-academy" src="img/icons/academy.svg" width="27" height="35" alt="Логотип HTMLAcademy">
       </a>
     </footer>
     

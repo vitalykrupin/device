@@ -1,30 +1,65 @@
-@font-face { 
-  font-family: 'Gilroy extrabold';       
-  src: url('../fonts/gilroyextrabold.woff2');
-  font-style: uppercase;
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/opensanslight.woff") format('woff'),
+       url("../fonts/opensanslight.woff2") format('woff2');
 }
 
-@font-face { 
-  font-family: 'Gilroy light';       
-  src: url('../fonts/gilroylight.woff2');
-  font-style: uppercase;
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/opensans.woff") format('woff'),
+       url("../fonts/opensans.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/gilroyextrabold.woff") format('woff'),
+       url("../fonts/gilroyextrabold.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/gilroylight.woff") format('woff'),
+       url("../fonts/gilroylight.woff2") format('woff2');
 }
 
 body {
   margin: 0;
   padding: 0;
 
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
-  color: rgba(0, 0, 0, 1);
+  letter-spacing: 0.01em;
+  color: rgb(0, 0, 0);
 
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgb(255, 255, 255);
 }
 
 a {
   text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+h3,
+h2 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.01em;
 }
 
 .visually-hidden {
@@ -38,10 +73,153 @@ a {
   border: 0;
 }
 
-.header-logo-text {
-  font-family: "Gilroy extrabold", Arial, sans-serif;
-  font-size: 48px;
-  line-height: 48px;
-  font-weight: 700;
+.main-header {
+  background-color: rgb(247, 226, 150);
 }
 
+.header-logo-text {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.header-catalog_open-item {
+  line-height: 36px; 
+}
+
+.header-catalog-title,
+.header-service-nav,
+.header-contacts,
+.footer-service-nav,
+.footer-contacts {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.slide-title {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 47px;
+  line-height: 56px;
+  letter-spacing: 0.01em;
+}
+
+.slide-number {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 179.2px;
+  line-height: 179.2px;
+  letter-spacing: 0.01em;
+  color: rgb(255, 255, 255);
+}
+
+.slide-more-info,
+.delivery-btn,
+.warranty-btn,
+.credit-btn,
+.about-btn,
+.write-us-btn,
+.btn-submitform {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border: none;
+}
+
+.table-value td {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.01em;
+}
+
+.table-name td {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+}
+
+.categories-list{
+  display: flex;
+}
+
+.categories-item {
+  width: 160px;
+  height: 160px;
+  background-color: rgb(247, 226, 150);
+}
+
+.categories-item-img {
+  
+}
+
+.categories-item-title {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+}
+
+.partners-list {
+  display: flex;
+}
+
+.about-list li {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.write-us input,
+.write-us textarea {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(70, 70, 70, 0.4);
+
+  border: none;
+  background-color: rgb(242, 242, 242);
+}
+
+.write-us label {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.main-footer {
+  background-color: rgb(70, 70, 70);
+  color: rgb(255, 255, 255);
+}
+
+.footer-logo-text {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 48px;
+  color: rgb(255, 198, 0);
+}
+
+.footer-interaction-nav li,
+.footer-user li {
+  line-height: 36px;
+}
+
+.logo-academy {
+  color: rgb(255, 198, 0);
+}
