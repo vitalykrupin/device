@@ -84,14 +84,50 @@ h2 {
   line-height: 48px;
 }
 
+.header-logo-text:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.header-logo-text:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .header-search input {
   color: rgba(0, 0, 0, 0.3);
   border: none;
   background-color: rgb(247, 226, 150);
 }
 
+.header-user-login:hover,
+.interaction-nav-compare:hover,
+.interaction-nav-cart:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.header-user-login:active,
+.interaction-nav-compare:active,
+.interaction-nav-cart:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* .header-search input:hover {
+  
+}
+
+.header-search input:hover {
+  
+} Не знаю как placeholder стилизовать */
+
 .header-catalog_open-item {
   line-height: 36px; 
+}
+
+.header-catalog_open-item:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.header-catalog_open-item:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .header-catalog-title,
@@ -105,6 +141,18 @@ h2 {
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+}
+
+.header-catalog-title:hover,
+.header-service-nav:hover,
+.header-contacts:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.header-catalog-title:active,
+.header-service-nav:active,
+.header-contacts:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .slide-title {
@@ -140,6 +188,12 @@ h2 {
   border: none;
 }
 
+.delivery-btn:active,
+.warranty-btn:active,
+.credit-btn:active {
+  color: rgb(247, 225, 132);
+}
+
 .table-value td {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 300;
@@ -166,9 +220,6 @@ h2 {
   background-color: rgb(247, 226, 150);
 }
 
-.categories-item-img {
-  
-}
 
 .categories-item-title {
   font-family: "Gilroy", Arial, sans-serif;
@@ -176,6 +227,10 @@ h2 {
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.01em;
+}
+
+.categories-item-title:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .partners-list {
@@ -201,6 +256,11 @@ h2 {
   background-color: rgb(242, 242, 242);
 }
 
+/* .write-us-input:focus,
+.write-us-textarea:focus {
+  border: 2px solid rgb(247, 226, 150);
+}  Туплю, не могу бордер по фокусу сделать нужный*/
+
 .write-us label {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 900;
@@ -221,9 +281,38 @@ h2 {
   color: rgb(255, 198, 0);
 }
 
+.footer-logo-text:hover {
+  color: rgba(255, 198, 0, 0.6);
+}
+
+.footer-logo-text:active {
+  color: rgba(255, 198, 0, 0.3);
+}
+
 .footer-interaction-nav li,
 .footer-user li {
   line-height: 36px;
+  color: rgba(255, 255, 255, 0.7)
+}
+
+.footer-interaction-nav li:hover,
+.footer-user li:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-interaction-nav li:active,
+.footer-user li:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-service-nav:hover,
+.footer-contacts:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-service-nav:active,
+.footer-contacts:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .logo-academy {
@@ -238,6 +327,14 @@ h2 {
   font-size: 14px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-path-item a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.catalog-path-item a:active{
+  color: rgba(0, 0, 0, 0.1);
 }
 
 .filter-sidebar {
@@ -298,6 +395,10 @@ h2 {
   letter-spacing: 0.01em;
 }
 
+.filter-group input:disabled {
+  color: rgb(166, 166, 166);
+}
+
 .filter-btn {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 900;
@@ -325,6 +426,43 @@ h2 {
   letter-spacing: 0.01em;
 }
 
+.usage-links .add-to-cart {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  
+  border: none;
+}
+
+.usage-links .add-to-cart:active,
+.filter-btn:active,
+.slide-more-info:active,
+.about-btn:active,
+.write-us-btn:active,
+.btn-submitform:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.usage-links .add-to-compare {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.usage-links .add-to-compare:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.usage-links .add-to-compare:active {
+  color: rgba(0, 0, 0, 0.2);
+}
+
 .pages-nav-list,
 .page-numbers-list {
   display: flex;
@@ -340,6 +478,11 @@ h2 {
   text-transform: uppercase;
 }
 
+.ctrl-prev-btn:active,
+.ctrl-next-btn:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .page-numbers-list a {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 900;
@@ -349,12 +492,11 @@ h2 {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.page-numbers-list a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
 .page-numbers-list a:active {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-weight: 900;
-  font-style: 16px;
-  line-height: 24px;
-  letter-spacing: 0.2em;
   color: rgba(0, 0, 0, 1);
 }
 
@@ -369,4 +511,20 @@ h2 {
 
 .footer-user-logout a {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.dji-logo:hover {
+  background-image: url("../img/logo-dji_h.jpg");
+}
+
+.spgadgets-logo:hover {
+  background-image: url("../img/logo-spgadgets_h.jpg");
+}
+
+.gopro-logo:hover {
+  background-image: url("../img/logo-gopro_h.jpg");
+}
+
+.vive-logo:hover {
+  background-image: url("../img/logo-vive_h.jpg");
 }
