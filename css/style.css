@@ -49,19 +49,6 @@ a {
   color: inherit;
 }
 
-ul {
-  list-style: none;
-}
-
-h3,
-h2 {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-weight: 900;
-  font-size: 47px;
-  line-height: 48px;
-  letter-spacing: 0.01em;
-}
-
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -98,6 +85,26 @@ h2 {
   background-color: rgb(247, 226, 150);
 }
 
+.header-search input:hover::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.header-search input:hover:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.header-search input:hover::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.header-user {
+  list-style: none;
+}
+
+.interaction-nav-btns {
+  list-style: none;
+}
+
 .header-user-login:hover,
 .interaction-nav-compare:hover,
 .interaction-nav-cart:hover {
@@ -110,13 +117,9 @@ h2 {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/* .header-search input:hover {
-  
+.header-catalog_open {
+  list-style: none;
 }
-
-.header-search input:hover {
-  
-} Не знаю как placeholder стилизовать */
 
 .header-catalog_open-item {
   line-height: 36px; 
@@ -141,6 +144,8 @@ h2 {
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+
+  list-style: none;
 }
 
 .header-catalog-title:hover,
@@ -153,6 +158,10 @@ h2 {
 .header-service-nav:active,
 .header-contacts:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.slider-btns {
+  list-style: none;
 }
 
 .slide-title {
@@ -178,7 +187,7 @@ h2 {
 .credit-btn,
 .about-btn,
 .write-us-btn,
-.btn-submitform {
+.btn-submit-form {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 900;
   font-size: 18px;
@@ -186,6 +195,12 @@ h2 {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   border: none;
+}
+
+.about-btn:active,
+.write-us-btn:active,
+.btn-submit-form:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .delivery-btn:active,
@@ -203,8 +218,6 @@ h2 {
 }
 
 .table-name td {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 300;
   font-size: 13px;
   line-height: 20px;
   letter-spacing: 0.01em;
@@ -212,6 +225,7 @@ h2 {
 
 .categories-list{
   display: flex;
+  list-style: none;
 }
 
 .categories-item {
@@ -235,6 +249,15 @@ h2 {
 
 .partners-list {
   display: flex;
+  list-style: none;
+}
+
+.about h2 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.01em;
 }
 
 .about-list li {
@@ -244,22 +267,30 @@ h2 {
   line-height: 40px;
 }
 
-.write-us input,
-.write-us textarea {
-  font-family: "Open Sans", Arial, sans-serif;
+.contacts h2{
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.01em;
+}
+
+.write-us-input,
+.write-us-textarea {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: rgba(70, 70, 70, 0.4);
 
+  outline: none;
   border: none;
   background-color: rgb(242, 242, 242);
 }
 
-/* .write-us-input:focus,
+.write-us-input:focus,
 .write-us-textarea:focus {
   border: 2px solid rgb(247, 226, 150);
-}  Туплю, не могу бордер по фокусу сделать нужный*/
+} 
 
 .write-us label {
   font-family: "Gilroy", Arial, sans-serif;
@@ -289,6 +320,14 @@ h2 {
   color: rgba(255, 198, 0, 0.3);
 }
 
+.footer-user {
+  list-style: none;
+}
+
+.footer-interaction-nav-btns {
+  list-style: none;
+}
+
 .footer-interaction-nav li,
 .footer-user li {
   line-height: 36px;
@@ -305,6 +344,10 @@ h2 {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.footer-service-nav {
+  list-style: none;
+}
+
 .footer-service-nav:hover,
 .footer-contacts:hover {
   color: rgba(255, 255, 255, 0.6);
@@ -315,12 +358,17 @@ h2 {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.footer-social-list {
+  list-style: none;
+}
+
 .logo-academy {
   color: rgb(255, 198, 0);
 }
 
 .catalog-path-list {
   display: flex;
+  list-style: none;
 }
 
 .catalog-path-item a {
@@ -353,7 +401,6 @@ h2 {
 
 .catalog-sort-types a,
 .catalog-sort-buttons a {
-  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -385,17 +432,24 @@ h2 {
   font-size: 14px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.2);
+  text-transform: lowercase;
 }
 
-.filter-group label {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 300;
+.color-list {
+  list-style: none;
+}
+
+.bluetooth-list {
+  list-style: none;
+}
+
+.color-list-item {
   font-size: 14px;
   line-height: 40px;
   letter-spacing: 0.01em;
 }
 
-.filter-group input:disabled {
+.filter-input:disabled {
   color: rgb(166, 166, 166);
 }
 
@@ -408,6 +462,14 @@ h2 {
   text-transform: uppercase;
   
   border: none;
+}
+
+.filter-btn:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.products-list {
+  list-style: none;
 }
 
 .products-list a {
@@ -438,17 +500,11 @@ h2 {
 }
 
 .usage-links .add-to-cart:active,
-.filter-btn:active,
-.slide-more-info:active,
-.about-btn:active,
-.write-us-btn:active,
-.btn-submitform:active {
+.slide-more-info:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
 .usage-links .add-to-compare {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 300;
   font-size: 13px;
   line-height: 20px;
   letter-spacing: 0.01em;
@@ -463,9 +519,13 @@ h2 {
   color: rgba(0, 0, 0, 0.2);
 }
 
-.pages-nav-list,
+.pages-nav-list {
+  display: flex;
+  list-style: none;
+}
 .page-numbers-list {
   display: flex;
+  list-style: none;
 }
 
 .ctrl-prev-btn,
@@ -502,8 +562,6 @@ h2 {
 
 .header-user-logout a,
 .footer-user-logout a {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 300;
   font-style: 15px;
   line-height: 30px;
   color: rgba(0, 0, 0, 0.3);
@@ -513,18 +571,18 @@ h2 {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.dji-logo:hover {
+.logo-dji:hover {
   background-image: url("../img/logo-dji_h.jpg");
 }
 
-.spgadgets-logo:hover {
+.logo-spgadgets:hover {
   background-image: url("../img/logo-spgadgets_h.jpg");
 }
 
-.gopro-logo:hover {
+.logo-gopro:hover {
   background-image: url("../img/logo-gopro_h.jpg");
 }
 
-.vive-logo:hover {
+.logo-vive:hover {
   background-image: url("../img/logo-vive_h.jpg");
 }
