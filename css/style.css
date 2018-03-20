@@ -30,6 +30,22 @@
        url("../fonts/gilroylight.woff2") format('woff2');
 }
 
+/* ------------------------Global---------------  */
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.content-box-component {
+  box-sizing: content-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -49,6 +65,13 @@ a {
   color: inherit;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ---------------------------Global----------------- */
+
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -58,6 +81,15 @@ a {
   margin: -1px;
   padding: 0;
   border: 0;
+}
+
+.button {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
 .main-header {
@@ -82,23 +114,22 @@ a {
 .header-search input {
   color: rgba(0, 0, 0, 0.3);
   border: none;
-  background-color: rgb(247, 226, 150);
+  background-color: transparent;
 }
 
-.header-search input:hover::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.6);
-}
-
+.header-search input:hover::-webkit-input-placeholder,
 .header-search input:hover:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.header-search input:hover::-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
 
 .header-user {
   list-style: none;
+}
+
+.header-user-logout a {
+  font-style: 15px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .interaction-nav-btns {
@@ -135,16 +166,7 @@ a {
 
 .header-catalog-title,
 .header-service-nav,
-.header-contacts,
-.footer-service-nav,
-.footer-contacts {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-weight: 900;
-  font-size: 18px;
-  line-height: 24px;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-
+.header-contacts {
   list-style: none;
 }
 
@@ -181,34 +203,6 @@ a {
   color: rgb(255, 255, 255);
 }
 
-.slide-more-info,
-.delivery-btn,
-.warranty-btn,
-.credit-btn,
-.about-btn,
-.write-us-btn,
-.btn-submit-form {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-weight: 900;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  border: none;
-}
-
-.about-btn:active,
-.write-us-btn:active,
-.btn-submit-form:active {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.delivery-btn:active,
-.warranty-btn:active,
-.credit-btn:active {
-  color: rgb(247, 225, 132);
-}
-
 .table-value td {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 300;
@@ -234,7 +228,6 @@ a {
   background-color: rgb(247, 226, 150);
 }
 
-
 .categories-item-title {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 900;
@@ -250,6 +243,18 @@ a {
 .partners-list {
   display: flex;
   list-style: none;
+}
+
+.delivery-btn,
+.warranty-btn,
+.credit-btn {
+  border: none;
+}
+
+.delivery-btn:active,
+.warranty-btn:active,
+.credit-btn:active {
+  color: rgb(247, 225, 132);
 }
 
 .about h2 {
@@ -275,6 +280,10 @@ a {
   letter-spacing: 0.01em;
 }
 
+.about-btn:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .write-us-input,
 .write-us-textarea {
   font-weight: 400;
@@ -297,6 +306,18 @@ a {
   font-weight: 900;
   font-size: 18px;
   line-height: 24px;
+}
+
+.write-us-btn:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.btn-submit-form {
+  border: none;
+}
+
+.btn-submit-form:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .main-footer {
@@ -344,7 +365,8 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.footer-service-nav {
+.footer-service-nav,
+.footer-contacts {
   list-style: none;
 }
 
@@ -560,7 +582,6 @@ a {
   color: rgba(0, 0, 0, 1);
 }
 
-.header-user-logout a,
 .footer-user-logout a {
   font-style: 15px;
   line-height: 30px;
