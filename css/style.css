@@ -47,6 +47,7 @@ html {
 }
 
 body {
+  min-width: 1160px;
   margin: 0;
   padding: 0;
 
@@ -606,4 +607,27 @@ img {
 
 .logo-vive:hover {
   background-image: url("../img/logo-vive_h.jpg");
+}
+
+/*-------------Grid-------------- */
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.container .wrapper-left-col {
+  width: 580px;
+}
+
+.container .wrapper-right-col {
+  width: 580px;
+}
+
+.main-header {
+
+  padding: 40px 60px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
