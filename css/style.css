@@ -769,6 +769,10 @@ img {
   margin: 0 auto;
 }
 
+.catalog-info-row {
+  background-image: linear-gradient(to right, rgb(220, 220, 220), rgb(235, 235, 235));
+}
+
 .catalog-info-row .container {
   display: flex;
 }
