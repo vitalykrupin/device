@@ -770,7 +770,7 @@ img {
 }
 
 .catalog-info-row {
-  background-image: linear-gradient(to right, rgb(220, 220, 220), rgb(235, 235, 235));
+  background-image: linear-gradient(to right, rgb(220, 220, 220) 0%, rgb(220, 220, 220) 50%, rgb(235, 235, 235) 50%, rgb(235, 235, 235) 100%);
 }
 
 .catalog-info-row .container {
