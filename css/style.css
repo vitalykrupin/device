@@ -227,8 +227,8 @@ img {
 }
 
 .categories-item {
-  width: 160px;
-  height: 160px;
+  min-width: 160px;
+  min-height: 160px;
   background-color: rgb(247, 226, 150);
 }
 
@@ -560,10 +560,19 @@ img {
   color: rgba(0, 0, 0, 0.2);
 }
 
+.pages-nav {
+  width: 760px;
+  margin-left: 72px;
+  margin-bottom: 78px;
+
+  background-color: rgb(235, 235, 235);
+}
+
 .pages-nav-list {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  padding: 0;
 }
 .page-numbers-list {
   display: flex;
@@ -638,7 +647,7 @@ img {
 }
 
 .container {
-  width: 1160px;
+  max-width: 1160px;
   margin: 0 auto;
 }
 
@@ -722,18 +731,32 @@ img {
 
 .footer-top-row {
   display: flex;
+  justify-content: flex-end;
 }
 
 .footer-user {
+  display: flex;
+  padding: 0;
+}
+
+.footer-interaction-nav {
+  padding: 0;
   display: flex;
 }
 
 .footer-middle-row {
   display: flex;
+  justify-content: space-between;
 }
 
 .footer-service-nav {
+  padding: 0;
   display: flex;
+  justify-content: space-between;
+}
+
+.footer-contacts {
+  padding: 0;
 }
 
 .footer-bottom-row {
@@ -742,18 +765,28 @@ img {
 
 .footer-social {
   display: flex;
+  padding: 0;
+  margin: 0 auto;
 }
 
-.footer-interaction-nav {
+.catalog-info-row .container {
   display: flex;
 }
 
-.catalog-wrapper {
+.catalog-content .container {
   display: flex;
 }
 
 .catalog-sort {
   display: flex;
+  min-width: 832px;
+  
+
+  background-color: rgb(235, 235, 235);
+}
+
+.catalog-info-row {
+  min-height: 70px;
 }
 
 .catalog-sort-types {
@@ -770,6 +803,10 @@ img {
   width: 328px;
 }
 
+.catalog-left-side {
+  background-color: rgb(239, 239, 239);
+}
+
 .catalog-right-side {
   display: flex;
   flex-direction: column;
@@ -779,11 +816,17 @@ img {
   display: flex;
   flex-wrap: wrap;
   width: 832px;
-  margin-left: 72px;
+  margin: 0 0 0 42px;
+  padding: 70px 0 0 0;
 }
 
 .product {
   width: 360px;
   margin-bottom: 72px;
-  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.filter-sidebar-caption {
+  min-width: 328px;
+  background-color: rgb(220, 220, 220);
 }
