@@ -85,6 +85,10 @@ img {
 }
 
 .button {
+  position: relative;
+
+  width: 220px;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 900;
   font-size: 18px;
@@ -160,6 +164,10 @@ img {
   list-style: none;
 }
 
+.header-catalog_close {
+  display: none;
+}
+
 .header-catalog_open-item {
   line-height: 36px; 
 }
@@ -193,27 +201,25 @@ img {
 
 .slider-slides {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .slider-btns {
   list-style: none;
+  display: inline-block;
+  margin: 0;
 }
 
 .slide-title {
+  position: relative;
+  z-index: 2;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 900;
   font-size: 47px;
   line-height: 56px;
   letter-spacing: 0.01em;
-}
-
-.slide-number {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-weight: 900;
-  font-size: 179.2px;
-  line-height: 179.2px;
-  letter-spacing: 0.01em;
-  color: rgb(255, 255, 255);
 }
 
 .table-value td {
@@ -813,10 +819,6 @@ img {
   margin-right: -4px;
 }
 
-.header-contacts-link {
-  
-}
-
 .header-catalog {
   position: relative;
 }
@@ -876,17 +878,200 @@ img {
   width: 200px;
 }
 
+.slider > .container {
+  position: relative;
+  top: -111px;
+  margin-bottom: -20px;
+}
+
 .slider-btns {
   display: flex;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  bottom: 169px;
+  right: 93px;
+}
+
+.circle {
+  display: inline-block;
+  margin-right: 33px;
+}
+
+.circle:last-child {
+  margin-right: 0;
+}
+
+.circle label {
+  font-size: 0;
+  position: relative;
+}
+
+.slider-btns-item + label::before {
+  content: "";
+
+  position: absolute;
+  top: 16px;
+  left: 0;
+
+  width: 12px;
+  height: 12px;
+
+  background-image: url("../img/icons/radio-off.svg");
+  background-repeat: no-repeat;
+  background-size: 12px;
+
+  cursor: pointer;
+}
+
+.slider-btns-item:checked + label::before {
+  background-image: url("../img/icons/radio-on.svg");
+}
+
+.slider-slides {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .slider-slides li {
   display: flex;
+  padding-left: 90px;
 }
 
-.slider-left-col,
+.slider-left-col {
+  width: 490px;
+  margin-right: 20px;
+}
+
 .slider-right-col {
-  width: 580px;
+  position: relative;
+
+  width: 560px;
+  padding-top: 80px;
+}
+
+.slider-right-col::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 37px;
+
+  width: 100px;
+  height: 7px;
+
+  background-color: rgb(255, 255, 255);
+}
+
+.slider-right-col::after {
+  content: "";
+  position: absolute;
+  top: -13px;
+  right: 46px;
+  z-index: 0;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 180px;
+  line-height: 180px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.01em;
+}
+
+.slide-monopod .slider-right-col::after {
+  content: "01";
+}
+
+.slide-fitness .slider-right-col::after {
+  content: "02";
+}
+
+.slider-kvadrocopter .slider-right-col::after {
+  content: "03";
+}
+
+.slide-title {
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.slide-description {
+  margin: 0;
+  margin-bottom: 49px;
+}
+
+.slide-more-info {
+  padding: 8px 42px;
+}
+
+.slide-more-info::after {
+  content: "";
+
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 0;
+
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  transition: height 0.3s;
+
+  width: 100%;
+  height: 8px;
+
+  background-color: rgb(240, 197, 46);
+
+}
+
+.slide-more-info:hover::after {
+  content: "";
+
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 0;
+
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  transition: height 0.3s;
+  
+  width: 100%;
+  height: 100%;
+
+  background-color: rgb(240, 197, 46);
+
+}
+
+.slide-more-info:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-image: none;
+  background-color: rgb(240, 197, 46);
+}
+
+.slide-info {
+  margin-top: 53px;
+  margin-left: -2px;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.slide-info td {
+  width: 160px;
+  padding: 0;
+}
+
+.slide-info td:nth-child(2) {
+  width: 140px;
+}
+
+.table-name td {
+  padding-top: 7px;
 }
 
 .categories-list {

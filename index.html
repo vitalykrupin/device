@@ -55,7 +55,7 @@
 
             <a class="header-catalog-title button" href="#">Каталог товаров</a>
 
-            <ul class="header-catalog_open">
+            <ul class="header-catalog_sub header-catalog_open header-catalog_close visually-hidden">
               <li class="header-catalog_open-item"><a href="#">Виртуальная реальность</a></li>
               <li class="header-catalog_open-item"><a href="#">Фитнес-браслеты</a></li>
               <li class="header-catalog_open-item"><a href="#">Квадрокоптеры</a></li>
@@ -99,9 +99,22 @@
           <h2 class="visually-hidden">Слайдер популярных товаров</h2>
 
           <ul class="slider-btns">
-            <li class="slider-btns-item"><input class="slider-btn-1" type="radio">Слайд 1</li>
-            <li class="slider-btns-item"><input class="slider-btn-2" type="radio">Слайд 2</li>
-            <li class="slider-btns-item"><input class="slider-btn-3" type="radio">Слайд 3</li>
+
+            <li class="circle active">
+              <input class="slider-btns-item visually-hidden" id="slider-btn-1" type="radio" checked>
+              <label class="slide-1" for="slider-btn-1">Слайд 1</label>
+            </li>
+
+            <li class="circle">
+              <input class="slider-btns-item visually-hidden" id="slider-btn-2" type="radio">
+              <label class="slide-2" for="slider-btn-2">Слайд 2</label>
+            </li>
+
+            <li class="circle">
+              <input class="slider-btns-item visually-hidden" id="slider-btn-3" type="radio">
+              <label class="slide-3" for="slider-btn-3">Слайд 3</label>
+            </li>
+
           </ul>
 
           <ul class="slider-slides">
@@ -116,10 +129,10 @@
 
               <div class="slider-right-col">
 
-                <div class="slide-number slide-number-monopod">01</div>
                 <h3 class="slide-title slide-title-monopod">Делай селфи, <br> как Бен Стиллер!</h3>
-                <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                 <a href="#" class="slide-more-info button">Подробнее</a>
+
                 <table class="slide-info slide-info-monopod">
                   <tr class="table-value">
                     <td>8,5 м</td>
@@ -147,15 +160,15 @@
               
               <div class="slider-right-col">
 
-                <div class="slide-number  slide-number-fitness">02</div>
                 <h3 class="slide-title slide-title-fitness">Худеем <br>правильно!</h3>
                 <p class="slide-description">Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
                 <a href="#" class="slide-more-info button">Подробнее</a>
+
                 <table class="slide-info slide-info-fitness">
-                  <tr>
+                  <tr class="table-value">
                     <td>48 часов</td>
                   </tr>
-                  <tr>
+                  <tr class="table-name">
                     <td>Без подзарядки</td>
                   </tr>
                 </table>
@@ -174,16 +187,16 @@
 
               <div class="slider-right-col">
 
-                <div class="slide-number  slide-number-kvadrocopter">03</div>
                 <h3 class="slide-title  slide-title-kvadrocopter">Порхает как бабочка, <br>жалит как пчела!</h3>
                 <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен <br> мощным лазером, замаскированным под стандартную камеру.</p>
                 <a href="#" class="slide-more-info button">Подробнее</a>
+
                 <table class="slide-info slide-info-kvadrocopter">
-                  <tr>
+                  <tr class="table-value">
                     <td>800 м</td>
                     <td>50 м</td>
                   </tr>
-                  <tr>
+                  <tr class="table-name">
                     <td>Дальность полета</td>
                     <td>Радиус поражения</td>
                   </tr>
