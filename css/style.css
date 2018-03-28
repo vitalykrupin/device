@@ -293,6 +293,7 @@ text-transform: uppercase;
 .warranty-btn,
 .credit-btn {
   border: none;
+  width: 160px;
 }
 
 .delivery-btn:active,
@@ -307,6 +308,14 @@ text-transform: uppercase;
   font-size: 47px;
   line-height: 48px;
   letter-spacing: 0.01em;
+}
+
+.about-list {
+  margin: 0;
+  margin-bottom: 60px;
+  padding: 0;
+  padding-left: 35px;
+  list-style: none;
 }
 
 .about-list li {
@@ -1071,7 +1080,7 @@ text-transform: uppercase;
   width: 100%;
   height: 100%;
 
-  background-color: rgb(240, 162, 46);
+  background-color: rgb(240, 197, 46);
 
 }
 
@@ -1104,6 +1113,8 @@ text-transform: uppercase;
 .categories-list {
   display: flex;
   justify-content: space-between;
+
+  margin-bottom: 165px;
 }
 
 .category-image {
@@ -1136,24 +1147,248 @@ text-transform: uppercase;
   width: 160px;
 }
 
+.services {
+  min-height: 288px;
+  margin-bottom: 93px;
+
+  background-color: rgb(229, 229, 229);
+}
+
 .services .container {
   display: flex;
 }
 
 .left-services-col {
+  position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+
   width: 280px;
+  height: 156px;
+
+  padding-right: 120px;
+  padding-left: 3px;
+  margin-top: -14px;
 }
+
+.left-services-col::after {
+  content: "";
+
+  position: absolute;
+  top: -87px;
+  left: 277px;
+
+  width: 7px;
+  height: 319px;
+
+  background-color: rgb(0, 0, 0);
+}
+
+.services-controls button {
+  background-color: transparent;
+} 
 
 .right-services-col {
   display: flex;
-  width: 880px;
+  width: 555px;
+
+  padding-left: 120px;
+  margin-top: -31px;
+}
+
+.services-slide-delivery,
+.services-slide-warranty,
+.services-slide-credit {
+  position: relative;
+}
+
+.services-slide-delivery::after {
+  content: "";
+
+  position: absolute;
+  left: 558px;
+  top: 15px;
+
+  width: 173px;
+  height: 195px;
+
+  background-image: url(../img/delivery.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.services-slide-warranty::after {
+  content: "";
+
+  position: absolute;
+  left: 544px;
+  top: -9px;
+
+  width: 173px;
+  height: 195px;
+
+  background-image: url(../img/warranty.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.services-slide-credit::after {
+  content: "";
+
+  position: absolute;
+  left: 537px;
+  top: -9px;
+
+  width: 173px;
+  height: 195px;
+
+  background-image: url(../img/credit.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.services-slide-title {
+  margin-bottom: 26px;
+}
+
+.services-slide-description {
+  margin: 0;
+}
+
+.partners {
+  margin-bottom: 136px;
 }
 
 .partners-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+
+  padding: 0; 
+}
+
+.company-info p {
+  letter-spacing: 0;
+}
+
+.about {
+  position: relative;
+  min-height: 605px;
+  width: 475px;
+  margin-right: 123px;
+}
+
+.about::before {
+  content: "";
+
+  position: absolute;
+  top: -52px;
+
+  width: 80px;
+  height: 7px;
+
+  background-color: rgb(0, 0, 0)
+}
+
+.about-title,
+.contacts-title {
+  margin: 0;
+  margin-bottom: 43px;
+}
+
+.about-text {
+  width: 475px;
+}
+
+.about-text p:nth-child(1) {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.about-text p:nth-child(2) {
+  margin: 0;
+  margin-bottom: 66px;
+}
+
+.contacts {
+  position: relative;
+  min-height: 605px;
+  width: 560px;
+}
+
+.contacts::before {
+  content: "";
+
+  position: absolute;
+  top: -52px;
+  left: 2px;
+
+  width: 80px;
+  height: 7px;
+
+  background-color: rgb(0, 0, 0)
+}
+
+.contacts-text {
+  margin: 0;
+  margin-bottom: 39px;
+}
+
+.contacts-map {
+  margin-bottom: 65px;
+}
+
+
+.write-us-btn {
+  padding: 8px 42px;
+}
+
+.about-btn {
+  padding: 8px 22px;
+}
+
+.about-btn::after,
+.write-us-btn::after {
+  content: "";
+
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 0;
+
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  transition: height 0.3s;
+
+  width: 100%;
+  height: 8px;
+
+  background-color: rgb(240, 197, 46);
+}
+
+.about-btn:hover::after,
+.write-us-btn:hover::after {
+  content: "";
+
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 0;
+
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  transition: height 0.3s;
+  
+  width: 100%;
+  height: 100%;
+
+  background-color: rgb(240, 197, 46);
 }
 
 .company-info {
