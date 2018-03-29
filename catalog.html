@@ -158,15 +158,29 @@
 
             <div class="filter-group">
               <span>Стоимость</span>
-              <div class="range-filter">
-                <div class="range-controls">
-                  <div class="scale"><div style="margin-left: 50px; width: 100px;" class="bar"></div></div>
-                  <div class="toggle min-toggle"></div>
-                  <div class="toggle max-toggle"></div>
-                  <p class="min-price">От 0</p>
-                  <p class="max-price">До 5000</p>
+
+              <div class="filter-price-range">
+
+                <div class="price-controls">
+
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+
+                  <div class="range-toggle range-toggle-min"></div>
+
+                  <div class="range-toggle range-toggle-max"></div>
+
                 </div>
+
+                <label class="price-label" for="filter-min-price">от</label>
+                <input class="price-value" type="text" name="min-price" id="filter-min-price" value="0">
+
+                <label class="price-label" for="filter-max-price">до</label>
+                <input class="price-value" type="text" name="max-price" id="filter-max-price" value="5000">
+
               </div>
+
             </div>
 
             <fieldset class="filter-group">
