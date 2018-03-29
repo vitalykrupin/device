@@ -99,7 +99,22 @@ img {
 
 .main-header .container {
   background-color: rgb(247, 226, 150);
+
+  position: relative;
+  margin-top: 40px;
+  min-height: 299px;
+  padding-top: 28px;
+  padding-bottom: 46px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
+
+.catalog-header .container {
+  min-height: 187px;
+  padding-bottom: 20px;
+  margin-bottom: 36px;
+}
+
 
 .header-logo-text {
   font-family: "Gilroy", Arial, sans-serif;
@@ -781,31 +796,64 @@ text-transform: uppercase;
   list-style: none;
 }
 
+.crumbs {
+  padding: 0 60px;
+  margin-bottom: 29px;
+}
+
 .catalog-item-title {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 900;
   font-size: 47px;
   line-height: 48px;
   letter-spacing: 0.01em;
+  
+  margin: 0;
+  margin-bottom: 19px;
 }
 
 .catalog-path {
   display: flex;
+  justify-content: flex-start;
+  margin-right: 37px;
+  padding: 0;
   list-style: none;
 }
 
+.catalog-path-item {
+  margin-right: 37px;
+}
+
 .catalog-path-item a {
+  position: relative;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.01em;
 }
 
-.catalog-path-item a:hover {
+.catalog-path-item a:hover,
+.catalog-path-item a:focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.catalog-path-item a:active{
+.catalog-path-item a:active {
   color: rgba(0, 0, 0, 0.1);
+}
+
+.catalog-path-item:not(:last-child) a::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: -20px;
+  z-index: 1;
+  width: 7px;
+  height: 7px;
+  border-radius: 50px 0 0 0;
+  transform: rotate(-45deg) scale(0.73);
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 .filter-sidebar {
@@ -1043,16 +1091,6 @@ text-transform: uppercase;
   margin: 0 auto;
 }
 
-.main-header .container {
-  position: relative;
-  margin-top: 40px;
-  min-height: 299px;
-  padding-top: 28px;
-  padding-bottom: 46px;
-  padding-left: 60px;
-  padding-right: 60px;
-}
-
 .header-top-row {
   display: flex;
   margin-bottom: 10px;
@@ -1203,16 +1241,17 @@ text-transform: uppercase;
   position: absolute;
   z-index: 3;
   top: 45px;
+  left: -60px;
 
   display: flex;
   flex-wrap: wrap;
-  width: 1100px;
+  width: 1160px;
 
   background-color: rgb(247, 226, 150);
 
   justify-content: flex-start;
   align-content: flex-start;
-  padding: 2px 500px 28px 0;
+  padding: 2px 500px 28px 61px;
 
   min-height: 144px;
 
@@ -1714,12 +1753,68 @@ text-transform: uppercase;
   min-height: 70px;
 }
 
+.catalog-sort-caption {
+  padding-left: 74px;
+  margin-right: 72px;
+  margin-top: 23px;
+  margin-bottom: 23px;
+  width: 200px;
+}
+
 .catalog-sort-types {
   display: flex;
+  align-items: center;
+  width: 460px;
+  flex-wrap: wrap;
+}
+
+.catalog-sort-types a {
+  margin-right: 30px;
 }
 
 .catalog-sort-buttons {
+  list-style: none;
   display: flex;
+  margin-left: auto;
+  padding-top: 10px;
+}
+
+.arrow {
+  display: block;
+  margin-left: 15px;
+  font-size: 0;
+}
+
+.arrow::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  opacity: 0.2;
+  margin-left: 2px;
+  border: 12px solid black;
+  border-right-width: 6px;
+  border-left-width: 6px;
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+
+.arrow:hover::before,
+.arrow:focus::before {
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.arrow:active::before {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.sort-up::before {
+  border-top-width: 0;
+}
+
+.sort-down::before {
+  border-bottom-width: 0;
 }
 
 .filter-form {
