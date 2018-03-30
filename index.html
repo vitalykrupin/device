@@ -24,7 +24,7 @@
           <div class="header-left-col">
 
             <form class="header-search">
-              <label class="visually-hidden" for="header-search-field">Поле поиска</label>
+              <label for="header-search-field">Поле поиска</label>
               <input class="header-search-field" type="search" id="header-search-field" name="search-input" placeholder="Поиск по сайту">
               <button type="submit" class="header-search-submit">Найти</button>
             </form>
@@ -381,32 +381,38 @@
             <a href="#"><img class="map-img" src="img/map.jpg" width="560" height="224" alt="Карта расположения"></a>
           </div>
 
-          <div class="contacts-map-popup visually-hidden">
+          <section class="modal modal-map">
+            <h2 class="visually-hidden">Карта</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4498.1553158150755!2d37.5284326!3d55.6876376!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1522103678551" width="960" height="560" style="border:0" allowfullscreen></iframe>
+            <img src="img/map-big.jpg" alt="Офис компании по адресу Улица строителей, 15, Москва" width="960" height="560">
+            <button type="button" class="modal-close">Закрыть</button>
+          </section>
 
-            <h3 class="visually-hidden">Карта в всплывающем окне</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1495506674464!2d37.528015110948324!3d55.68638765733713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa+Stroiteley%2C+15%2C+Moskva%2C+119311!5e0!3m2!1sen!2sru!4v1522257154643" width="960" height="562" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-          </div>
-
-          <a class="write-us-btn button" href="#">Напишите нам</a>
+          <a class="write-us-btn write-us-link button" href="#">Напишите нам</a>
 
         </div>
 
-        <div class="visually-hidden write-us">
-
-          <h3 class="visually-hidden">Форма обратной связи</h3>
+        <section class="modal modal-write-us">
+          <h2 class="visually-hidden">Форма обратной связи</h2>
           <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-            <label class="write-us-label" for="write-us-name">Ваше имя:</label>
-            <input class="write-us-input" type="text" name="name" id="write-us-name" placeholder="Имя Фамилия">
-            <label class="write-us-label" for="write-us-email">Ваш e-mail:</label>
-            <input class="write-us-input" type="email" name="email" id="write-us-email" placeholder="email@example.com">
-            <label class="write-us-label" for="write-us-text">Текст письма:</label>
-            <textarea class="write-us-textarea" name="text" id="write-us-text" placeholder="В свободной форме"></textarea>
-            <button class="btn-submit-form button" type="submit">Отправить</button>
-            <button class="form-close" type="button">Закрыть</button>
+            <div class="form-input-wrapper">
+              <div class="wrapper-column">
+                <label class="write-us-label" for="write-us-name">Ваше имя:</label>
+                <input type="text" class="write-as-input" name="name" id="write-us-name" placeholder="Имя Фамилия">
+              </div>
+              <div class="wrapper-column">
+                <label class="write-us-label" for="write-us-email">Ваш e-mail:</label>
+                <input type="email" class="write-as-input" name="email" id="write-us-email" placeholder="email@example.com">
+              </div>
+            </div>
+            <div class="wrapper-column">
+              <label class="write-us-label" for="write-us-text">Текст письма:</label>
+              <textarea class="write-as-textarea" name="text" id="write-us-text" placeholder="В свободной форме"></textarea>
+            </div>
+            <button type="submit" class="modal-submit-btn button">Отправить</button>
           </form>
-
-        </div> 
+          <button type="button" class="modal-close">Закрыть</button>
+        </section>
 
       </section>
 <!-- Section Contacts ends -->
@@ -491,6 +497,6 @@
     
     
 <!--                                          Footer ends                               -->
-
+    <script src="js/main.js"></script>
   </body>
 </html>
