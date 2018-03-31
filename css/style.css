@@ -2191,7 +2191,7 @@ text-transform: uppercase;
 
 .add-to-cart {
   padding: 8px 35px;
-  z-index: 2;
+  z-index: 0;
 }
 
 .add-to-cart::after {
@@ -2215,7 +2215,7 @@ text-transform: uppercase;
   background-color: rgb(240, 197, 46);
 }
 
-.add-to-cart::after {
+.add-to-cart:hover::after {
   content: "";
 
   position: absolute;
