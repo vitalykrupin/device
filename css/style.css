@@ -115,12 +115,13 @@ img {
   margin-bottom: 36px;
 }
 
-
 .header-logo-text {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 900;
   font-size: 48px;
   line-height: 48px;
+
+  margin: 0;
 }
 
 .header-logo-text:hover {
@@ -1276,7 +1277,7 @@ text-transform: uppercase;
 
 .header-logo {
   position: absolute;
-  top: -72px;
+  top: -23px;
   left: 58px;
 }
 
@@ -1297,7 +1298,7 @@ text-transform: uppercase;
 
 .header-left-col {
   width: 580px;
-  margin: auto;
+  margin-top: 12px;
 }
 
 .header-right-col {
@@ -1478,7 +1479,7 @@ text-transform: uppercase;
 
   position: absolute;
   z-index: 3;
-  top: 45px;
+  top: 25px;
   left: -60px;
 
   display: flex;
@@ -1489,11 +1490,13 @@ text-transform: uppercase;
 
   justify-content: flex-start;
   align-content: flex-start;
-  padding: 2px 500px 28px 61px;
+  padding: 22px 500px 34px 61px;
 
   min-height: 144px;
+}
 
-  /* visibility: hidden; */
+.header-catalog_open:hover {
+  visibility: visible;
 }
 
 .header-catalog_open-item a {
@@ -2334,7 +2337,7 @@ transform: rotate(-45deg);
 }
 
 .modal-write-us {
-  width: 760px;
+  width: 960px;
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 96px;
