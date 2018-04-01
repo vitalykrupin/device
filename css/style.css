@@ -260,11 +260,11 @@ text-transform: uppercase;
 }
 
 .header-catalog_open-item:hover {
-  color: rgba(0, 0, 0, 0.6);
+  opacity: 0.6;
 }
 
 .header-catalog_open-item:active {
-  color: rgba(0, 0, 0, 0.3);
+  opacity: 0.3;
 }
 
 .header-catalog-title,
@@ -279,16 +279,17 @@ text-transform: uppercase;
 }
 
 .header-catalog-title:hover,
-.service-nav-delivery:hover,
-.service-nav-warranty:hover,
-.header-contacts:hover {
-  color: rgba(0, 0, 0, 0.6);
+.service-nav-delivery a:hover,
+.service-nav-warranty a:hover,
+.header-contacts a:hover {
+  opacity: 0.6;
 }
 
 .header-catalog-title:active,
-.header-service-nav:active,
-.header-contacts:active {
-  color: rgba(0, 0, 0, 0.3);
+.service-nav-delivery a:active,
+.service-nav-warranty a:active,
+.header-contacts-link a:active {
+  opacity: 0.3;
 }
 
 .slider {
@@ -667,8 +668,8 @@ text-transform: uppercase;
   margin: 0;
   margin-bottom: 60px;
   padding: 0;
-  padding-left: 13px;
-  list-style: circle inside;
+  padding-left: 36px;
+  list-style: none;
 }
 
 .about-list li {
@@ -677,6 +678,17 @@ text-transform: uppercase;
   font-weight: 900;
   font-size: 16px;
   line-height: 40px;
+}
+
+.about-list li::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -34px;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #a6a6a6;
+  border-radius: 50%;
 }
 
 .contacts h2 {
@@ -693,6 +705,7 @@ text-transform: uppercase;
 
 .write-us-input,
 .write-us-textarea {
+  display: block;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -705,7 +718,7 @@ text-transform: uppercase;
 .write-us-input:focus,
 .write-us-textarea:focus {
   border: 2px solid rgb(247, 226, 150);
-} 
+}
 
 .write-us label {
   font-family: "Gilroy", Arial, sans-serif;
@@ -784,12 +797,12 @@ text-transform: uppercase;
 }
 
 .footer-service-nav a:hover,
-.footer-contacts:hover {
+.footer-contacts a:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-service-nav a:active,
-.footer-contacts:active {
+.footer-contacts a:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -847,12 +860,12 @@ text-transform: uppercase;
   letter-spacing: 0.01em;
 }
 
-.catalog-path-item a:hover,
-.catalog-path-item a:focus {
+.catalog-path-item:not(:last-child) a:hover,
+.catalog-path-item:not(:last-child) a:focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.catalog-path-item a:active {
+.catalog-path-item:not(:last-child) a:active {
   color: rgba(0, 0, 0, 0.1);
 }
 
@@ -904,6 +917,10 @@ text-transform: uppercase;
   color: rgba(0, 0, 0, 1);
 }
 
+.catalog-sort-types a:first-child {
+  color: rgb(0, 0, 0);
+}
+
 .filter-group {
   margin: 0;
   padding: 0;
@@ -932,6 +949,7 @@ text-transform: uppercase;
 }
 
 .filter-group legend {
+  position: relative;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 900;
   font-size: 18px;
@@ -949,13 +967,13 @@ text-transform: uppercase;
   letter-spacing: 0.01em;
 }
 
-.filter-form fieldset::before,
+.filter-group legend::before,
 .filter-group > span::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 200px;
   height: 2px;
   background-color: rgb(0, 0, 0);
 }
@@ -1695,7 +1713,7 @@ text-transform: uppercase;
 }
 
 .contacts-map {
-  margin-bottom: 65px;
+  margin-bottom: 75px;
 }
 
 .map-img {
@@ -1756,13 +1774,16 @@ text-transform: uppercase;
 
 .main-footer {
   min-height: 325px;
+}
+
+.main-footer > .container {
   position: relative;
 }
 
 .footer-logo {
   position: absolute;
-  top: 58px;
-  left: 139px;
+  top: 57px;
+  left: 18px;
 }
 
 .footer-logo-text {
@@ -1794,7 +1815,7 @@ text-transform: uppercase;
   padding: 0;
 }
 
-.footer-user::before {
+.footer-user-login a::before {
   content: "";
   position: absolute;
   top: 13px;
@@ -1806,6 +1827,27 @@ text-transform: uppercase;
   background-position: 0 0;
 }
 
+.footer-user-name a::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: -25px;
+  width: 13px;
+  height: 12px;
+  background-image: url("../img/icons/user-fh.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.footer-user-name a:hover::before,
+.footer-user-login a:hover::before {
+  opacity: 0.6;
+}
+
+.footer-user-name a:active::before,
+.footer-user-login a:active::before {
+  opacity: 0.3;
+}
 
 .footer-interaction-nav {
   margin: 0;
@@ -1825,10 +1867,10 @@ text-transform: uppercase;
   position: relative;
 }
 
-.footer-interaction-nav-compare::before {
+.footer-interaction-nav-compare a::before {
   content: "";
   position: absolute;
-  top: 15px;
+  top: 13px;
   left: -20px;
   width: 10px;
   height: 10px;
@@ -1837,16 +1879,26 @@ text-transform: uppercase;
   background-position: 0 0;
 }
 
-.footer-interaction-nav-cart::before {
+.footer-interaction-nav-cart a::before {
   content: "";
   position: absolute;
-  top: 13px;
+  top: 11px;
   left: -21px;
   width: 12px;
   height: 12px;
   background-image: url("../img/icons/cart-fh.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.footer-interaction-nav-cart a:hover::before,
+.footer-interaction-nav-compare a:hover::before {
+  opacity: 0.6;
+}
+
+.footer-interaction-nav-cart a:active::before,
+.footer-interaction-nav-compare a:active::before {
+  opacity: 0.3;
 }
 
 .footer-middle-row {
@@ -2053,6 +2105,11 @@ text-transform: uppercase;
   border-bottom-width: 0;
 }
 
+.sort-down::before {
+  color: rgb(0, 0, 0);
+  opacity: 1;
+}
+
 .filter-form {
   width: 200px;
 }
@@ -2085,9 +2142,9 @@ text-transform: uppercase;
 .range-toggle {
   content: "";
   position: absolute;
-  top: -9px;
-  width: 4px;
-  height: 4px;
+  top: -11px;
+  width: 20px;
+  height: 20px;
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -2484,7 +2541,7 @@ text-transform: uppercase;
   width: 360px;
 }
 
-.write-as-textarea {
+.write-us-textarea {
   width: 760px;
 }
 
@@ -2561,4 +2618,15 @@ text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
   background-image: none;
   background-color: rgb(240, 197, 46);
+}
+
+.write-us-input:invalid,
+.write-us-textarea:invalid {
+    background-color: #f6dada;
+    outline:  none;
+}
+
+.write-us-input:hover,
+.write-us-textarea:hover {
+  background-color: rgb(234, 234, 234);
 }
