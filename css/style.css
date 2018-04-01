@@ -447,6 +447,18 @@ text-transform: uppercase;
   margin-bottom: 49px;
 }
 
+.slide-monopod .slide-description {
+  padding-right: 70px;
+}
+
+.slider-fitness .slide-description {
+  padding-right: 94px;
+}
+
+.slide-kvadrocopter .slide-description {
+  padding-right: 85px;
+}
+
 .slide-more-info {
   padding: 8px 42px;
   position: relative;
@@ -2322,6 +2334,14 @@ text-transform: uppercase;
   margin-top: 35px;
 }
 
+.product:nth-child(2) .product-price {
+  width: 74px;
+}
+
+.product:nth-child(4) .product-price {
+  width: 82px;
+}
+
 .product-price {
   margin: 0;
 }
@@ -2578,6 +2598,7 @@ text-transform: uppercase;
   padding: 8px 42px;
   position: relative;
   border: none;
+  background-color: transparent;
 }
 
 .modal-submit-btn::after {
