@@ -2031,7 +2031,7 @@ text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 70px;
+  height: 70px;
 }
 
 .catalog-wrapper .container {
@@ -2051,8 +2051,8 @@ text-transform: uppercase;
 }
 
 .catalog-sort-caption {
-  padding-left: 71px;
-  width: 270px;
+  padding-left: 73px;
+  width: 271px;
 }
 
 .catalog-sort-types {
@@ -2347,7 +2347,7 @@ text-transform: uppercase;
 }
 
 .filter-sidebar-caption {
-  min-width: 330px;
+  width: 328px;
   background-color: rgb(220, 220, 220);
 }
 
@@ -2358,7 +2358,7 @@ text-transform: uppercase;
 }
 
 .filter-sidebar {
-  min-width: 330px;
+  width: 330px;
   padding: 69px 68px 0 60px;
 } 
 
@@ -2366,7 +2366,7 @@ text-transform: uppercase;
   background-image: -webkit-gradient(linear, left top, right top, from(rgb(238, 238, 238)), color-stop(25%, rgb(238, 238, 238)), color-stop(25%, rgb(255, 255, 255)), to(rgb(255, 255, 255)));
   background-image: -webkit-linear-gradient(left, rgb(238, 238, 238) 0%, rgb(238, 238, 238) 25%, rgb(255, 255, 255) 25%, rgb(255, 255, 255) 100%);
   background-image: -o-linear-gradient(left, rgb(238, 238, 238) 0%, rgb(238, 238, 238) 25%, rgb(255, 255, 255) 25%, rgb(255, 255, 255) 100%);
-  background-image: linear-gradient(to right, rgb(238, 238, 238) 0%, rgb(238, 238, 238) 25%, rgb(255, 255, 255) 25%, rgb(255, 255, 255) 100%);
+  background-image: linear-gradient(to right, rgb(238, 238, 238) 0%, rgb(238, 238, 238) 15%, rgb(255, 255, 255) 15%, rgb(255, 255, 255) 100%);
 }
 
 .modal {
