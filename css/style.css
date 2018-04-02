@@ -348,6 +348,7 @@ text-transform: uppercase;
 
 .circle {
   display: inline-block;
+  vertical-align: middle;
   margin-right: 33px;
 }
 
@@ -369,7 +370,7 @@ text-transform: uppercase;
   height: 12px;
   background-image: url(../img/icons/slider-button-empty.svg);
   background-repeat: no-repeat;
-  background-size: 12px;
+  background-size: cover;
   cursor: pointer;
 }
 
@@ -445,6 +446,18 @@ text-transform: uppercase;
 .slide-description {
   margin: 0;
   margin-bottom: 49px;
+}
+
+.slide-monopod .slide-description {
+  padding-right: 70px;
+}
+
+.slider-fitness .slide-description {
+  padding-right: 94px;
+}
+
+.slide-kvadrocopter .slide-description {
+  padding-right: 85px;
 }
 
 .slide-more-info {
@@ -711,7 +724,7 @@ text-transform: uppercase;
   line-height: 18px;
   color: rgba(70, 70, 70, 0.4);
   outline: none;
-  border: none;
+  border: 2px solid transparent;
   background-color: rgb(242, 242, 242);
 }
 
@@ -885,9 +898,9 @@ text-transform: uppercase;
   border-bottom: 2px solid black;
 }
 
-.filter-sidebar {
+/* .filter-sidebar {
   width: 470px;
-}
+} */
 
 .filter-sidebar-caption,
 .catalog-sort-caption {
@@ -2019,7 +2032,7 @@ text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 70px;
+  height: 70px;
 }
 
 .catalog-wrapper .container {
@@ -2039,8 +2052,8 @@ text-transform: uppercase;
 }
 
 .catalog-sort-caption {
-  padding-left: 71px;
-  width: 270px;
+  padding-left: 73px;
+  width: 271px;
 }
 
 .catalog-sort-types {
@@ -2322,12 +2335,20 @@ text-transform: uppercase;
   margin-top: 35px;
 }
 
+.product:nth-child(2) .product-price {
+  width: 74px;
+}
+
+.product:nth-child(4) .product-price {
+  width: 82px;
+}
+
 .product-price {
   margin: 0;
 }
 
 .filter-sidebar-caption {
-  min-width: 330px;
+  width: 328px;
   background-color: rgb(220, 220, 220);
 }
 
@@ -2338,15 +2359,15 @@ text-transform: uppercase;
 }
 
 .filter-sidebar {
-  min-width: 330px;
-  padding: 69px 68px 0 60px;
+  width: 329px;
+  padding: 69px 68px 0 59px;
 } 
 
 .catalog-wrapper {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgb(238, 238, 238)), color-stop(25%, rgb(238, 238, 238)), color-stop(25%, rgb(255, 255, 255)), to(rgb(255, 255, 255)));
-  background-image: -webkit-linear-gradient(left, rgb(238, 238, 238) 0%, rgb(238, 238, 238) 25%, rgb(255, 255, 255) 25%, rgb(255, 255, 255) 100%);
-  background-image: -o-linear-gradient(left, rgb(238, 238, 238) 0%, rgb(238, 238, 238) 25%, rgb(255, 255, 255) 25%, rgb(255, 255, 255) 100%);
-  background-image: linear-gradient(to right, rgb(238, 238, 238) 0%, rgb(238, 238, 238) 25%, rgb(255, 255, 255) 25%, rgb(255, 255, 255) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgb(238, 238, 238)), color-stop(15%, rgb(238, 238, 238)), color-stop(15%, rgb(255, 255, 255)), to(rgb(255, 255, 255)));
+  background-image: -webkit-linear-gradient(left, rgb(238, 238, 238) 0%, rgb(238, 238, 238) 15%, rgb(255, 255, 255) 15%, rgb(255, 255, 255) 100%);
+  background-image: -o-linear-gradient(left, rgb(238, 238, 238) 0%, rgb(238, 238, 238) 15%, rgb(255, 255, 255) 15%, rgb(255, 255, 255) 100%);
+  background-image: linear-gradient(to right, rgb(238, 238, 238) 0%, rgb(238, 238, 238) 15%, rgb(255, 255, 255) 15%, rgb(255, 255, 255) 100%);
 }
 
 .modal {
@@ -2578,6 +2599,7 @@ text-transform: uppercase;
   padding: 8px 42px;
   position: relative;
   border: none;
+  background-color: transparent;
 }
 
 .modal-submit-btn::after {
