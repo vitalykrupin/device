@@ -897,9 +897,9 @@ text-transform: uppercase;
   border-bottom: 2px solid black;
 }
 
-.filter-sidebar {
+/* .filter-sidebar {
   width: 470px;
-}
+} */
 
 .filter-sidebar-caption,
 .catalog-sort-caption {
@@ -2358,8 +2358,8 @@ text-transform: uppercase;
 }
 
 .filter-sidebar {
-  width: 330px;
-  padding: 69px 68px 0 60px;
+  width: 329px;
+  padding: 69px 68px 0 59px;
 } 
 
 .catalog-wrapper {
