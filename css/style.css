@@ -369,7 +369,7 @@ text-transform: uppercase;
   height: 12px;
   background-image: url(../img/icons/slider-button-empty.svg);
   background-repeat: no-repeat;
-  background-size: 12px;
+  background-size: cover;
   cursor: pointer;
 }
 
@@ -2363,9 +2363,9 @@ text-transform: uppercase;
 } 
 
 .catalog-wrapper {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgb(238, 238, 238)), color-stop(25%, rgb(238, 238, 238)), color-stop(25%, rgb(255, 255, 255)), to(rgb(255, 255, 255)));
-  background-image: -webkit-linear-gradient(left, rgb(238, 238, 238) 0%, rgb(238, 238, 238) 25%, rgb(255, 255, 255) 25%, rgb(255, 255, 255) 100%);
-  background-image: -o-linear-gradient(left, rgb(238, 238, 238) 0%, rgb(238, 238, 238) 25%, rgb(255, 255, 255) 25%, rgb(255, 255, 255) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgb(238, 238, 238)), color-stop(15%, rgb(238, 238, 238)), color-stop(15%, rgb(255, 255, 255)), to(rgb(255, 255, 255)));
+  background-image: -webkit-linear-gradient(left, rgb(238, 238, 238) 0%, rgb(238, 238, 238) 15%, rgb(255, 255, 255) 15%, rgb(255, 255, 255) 100%);
+  background-image: -o-linear-gradient(left, rgb(238, 238, 238) 0%, rgb(238, 238, 238) 15%, rgb(255, 255, 255) 15%, rgb(255, 255, 255) 100%);
   background-image: linear-gradient(to right, rgb(238, 238, 238) 0%, rgb(238, 238, 238) 15%, rgb(255, 255, 255) 15%, rgb(255, 255, 255) 100%);
 }
 
