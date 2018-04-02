@@ -348,6 +348,7 @@ text-transform: uppercase;
 
 .circle {
   display: inline-block;
+  vertical-align: middle;
   margin-right: 33px;
 }
 
@@ -723,7 +724,7 @@ text-transform: uppercase;
   line-height: 18px;
   color: rgba(70, 70, 70, 0.4);
   outline: none;
-  border: none;
+  border: 2px solid transparent;
   background-color: rgb(242, 242, 242);
 }
 
